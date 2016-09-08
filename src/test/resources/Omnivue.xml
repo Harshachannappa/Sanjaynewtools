@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<container name="root">
+	<container name="Environments">
+		<container name="INT2">			
+		</container>
+		<container name="INT1">
+			<field name="omnivue-url" value="https://omnivue-test1.test.intranet/OMNIVue/login/login.jsf"></field>
+			<field name="sso-console"
+				value="http://ctlcentral-itv.test.qintra.com/portal/site/qcentral/index.jsp?epi-content=LOGIN&amp;SFA=true"></field>
+			<field name="partner-url"
+				value="https://ctl--e2e.cs28.my.salesforce.com/secur/login_portal.jsp?orgId=00D230000000N2l&amp;portalId=060A0000000HJjK"></field>
+			<container name="OVLoginPage">
+				<container name="Admin">
+					<field name="username_tbx" value="ldtst23" type="mandatory" />
+					<field name="pwd_tbx" value="Qwest2010" type="mandatory" />
+				</container>
+			</container>				
+		</container>				
+		<container name="E2E">
+			<field name="omnivue-url" value="https://omnivue-test3.test.intranet/OMNIVue/login/login.jsf"></field>
+			    <container name="OVLoginPage">
+				<container name="Admin">
+					<field name="username_tbx" value="ldtst23" type="mandatory" />
+					<field name="pwd_tbx" value="Qwest2010" type="mandatory" />
+				</container>
+			</container>			
+		</container>		
+	</container>
+	<container name="CommonData">
+		<container name="AddToRange">
+					<field name="tbx_low_street" value="wait-1:120" type="mandatory"></field>
+               		<field name="tbx_high_street" value="wait-1:130" type="mandatory"></field>
+               		<field name="tbx_street_name" value="wait-1:TEST AUTO - 1" type="mandatory"></field>
+					<field name="ddl_State" value="wait-5:LA-Louisiana" type="mandatory"></field>
+               		<field name="ddl_City" value="wait-1:BASILE" type="mandatory"></field> 
+		</container>
+		<container name="SecondaryAddress">
+					<field name="ddl_location_Designator_1" value="wait-3:APARTMENT" type="mandatory"></field>
+               		<field name="tbx_location_Designator_1_value" value="wait-1:15" type="mandatory"></field>
+					<field name="ddl_location_Designator_2" value="wait-3:PENTHOUSE" type="mandatory"></field>
+               		<field name="tbx_location_Designator_2_value" value="wait-1:5A" type="mandatory"></field>
+					<field name="ddl_location_Designator_3" value="wait-3:UNIT" type="mandatory"></field>
+               		<field name="tbx_location_Designator_3_value" value="wait-1:10" type="mandatory"></field>
+					<field name="tbx_location_Remarks" value="wait-3:AUTO-TEST LOCATION" type="mandatory"></field>
+					<field name="ddl_New_Construction_Ind" value="wait-3:Yes" type="mandatory"></field>
+               		<field name="tbx_Building_CLLi" value="wait-1:BSILLANA" type="mandatory"></field>
+               		<field name="tbx_SWC_CLLi" value="wait-1:BSILLANA02" type="mandatory"></field>
+               		<field name="tbx_Latitude" value="wait-1:30.49256" type="mandatory"></field>
+               		<field name="tbx_Longitude" value="wait-1:-92.59149" type="mandatory"></field>
+               		<field name="tbx_HCoordinate" value="wait-1:8583" type="mandatory"></field>
+               		<field name="tbx_VCoordinate" value="wait-1:3119" type="mandatory"></field>
+               		<field name="tbx_LATA" value="wait-1:488" type="mandatory"></field>
+               		<field name="tbx_NPa" value="wait-1:337" type="mandatory"></field>
+               		<field name="tbx_NXX" value="wait-1:432" type="mandatory"></field>
+		</container>
+		<container name="PrimaryAddress">
+					<field name="tbx_Address_Number" value="wait-1:122" type="mandatory"></field>
+					<field name="tbx_ZIP_1" value="wait-1:52147" type="mandatory"></field>
+					<field name="cmb_Location_Role" value="wait-1:Customer Site" type="mandatory"></field>
+		</container>
+	 	<container name="OVCreateAddressRange">            		
+               		<field name="tbx_low_street" value="wait-1:120" type="mandatory"></field>
+               		<field name="tbx_high_street" value="wait-1:130" type="mandatory"></field>
+               		<field name="tbx_street_name" value="wait-1:TEST AUTO - 1" type="mandatory"></field>
+               		<field name="ddl_streettype" value="wait-1:ARC-Arcade" type="mandatory"></field>
+               		<field name="ddl_indicator" value="wait-1:Both" type="mandatory"></field>
+               		<field name="ddl_State" value="wait-5:LA-Louisiana" type="mandatory"></field>
+               		<field name="ddl_City" value="wait-1:BASILE" type="mandatory"></field>               		
+               		<field name="tbx_zip" value="wait-1:84100" type="mandatory"></field>	
+               		<field name="ddl_NewConstructionIndicator" value="wait-1:Yes" type="mandatory"></field>
+               		<field name="ddl_LegacyCompanyArea" value="wait-5:CenturyLink" type="mandatory"></field>
+               		<field name="WireCenterRemarks" value="wait-1:TEST" type="mandatory"></field>
+               		<field name="tbx_WireCenterCLLI" value="wait-1:LSVGNVIC01" type="mandatory"></field>
+               		<field name="tbx_TaxCodeTAR" value="wait-1:LS1547" type="mandatory"></field>
+               		<field name="tbx_RateZone" value="wait-1:2" type="mandatory"></field>
+               		<field name="tbx_WireCenterID" value="wait-1:42" type="mandatory"></field>
+            	</container>       
+	 	<container name="OVActivationPage"> 	
+	 		<container name="AddToRange">
+					<field name="tbx_low_street" value="wait-1:120" type="mandatory"></field>
+               		<field name="tbx_high_street" value="wait-1:130" type="mandatory"></field>
+               		<field name="tbx_street_name" value="wait-1:TEST AUTO - 1" type="mandatory"></field>
+					<field name="ddl_State" value="wait-5:LA-Louisiana" type="mandatory"></field>
+               		<field name="ddl_City" value="wait-1:BASILE" type="mandatory"></field> 
+			</container>
+			<container name="Primary Address">
+					<field name="tbx_LocationFullName" value="wait-2:Automation Script 01" type="mandatory"></field>
+               		<field name="tbx_AddressPrefix" value="wait-1:Q1" type="mandatory"></field>
+					<field name="tbx_Address_Number" value="wait-1:5147" type="mandatory"></field>
+               		<field name="tbx_AddressSuffix" value="wait-1:S2" type="mandatory"></field>
+					<field name="ddl_StreetDirPrefix" value="wait-1:NORTH" type="mandatory"></field>
+               		<field name="tbx_StreetName" value="wait-1:AUTO-TEST" type="mandatory"></field>
+					<field name="ddl_StreetType" value="wait-1:FLDS-Fields" type="mandatory"></field>
+					<field name="ddl_StreetDirSuffix" value="wait-3:NORTH" type="mandatory"></field>
+               		<field name="ddl_State" value="wait-2:AZ-Arizona" type="mandatory"></field>
+               		<field name="ddl_City" value="wait-3:ARIZONA CITY" type="mandatory"></field>
+               		<field name="tbx_Zip_1" value="wait-1:81145" type="mandatory"></field>
+					<field name="tbx_Zip_2" value="wait-2:1576" type="mandatory"></field>			
+			</container>
+			<container name="SecondaryAddress">
+					<field name="ddl_location_Designator_1" value="wait-2:APARTMENT" type="mandatory"></field>
+               		<field name="tbx_location_Designator_1_value" value="wait-1:15" type="mandatory"></field>
+					<field name="ddl_location_Designator_2" value="wait-2:PENTHOUSE" type="mandatory"></field>
+               		<field name="tbx_location_Designator_2_value" value="wait-1:5A" type="mandatory"></field>
+					<field name="ddl_location_Designator_3" value="wait-2:UNIT" type="mandatory"></field>
+               		<field name="tbx_location_Designator_3_value" value="wait-1:MST" type="mandatory"></field>
+					<field name="tbx_location_Remarks" value="wait-2:AUTO-TEST LOCATION" type="mandatory"></field>
+					<field name="ddl_New_Construction_Ind" value="wait-3:Yes" type="mandatory"></field>
+               		<field name="tbx_Building_CLLi" value="wait-1:AZCYAZ03" type="mandatory"></field>
+               		<field name="tbx_SWC_CLLi" value="wait-1:AZCYAZ03RS3" type="mandatory"></field>
+               		<field name="tbx_Latitude" value="wait-1:32.76068" type="mandatory"></field>
+               		<field name="tbx_Longitude" value="wait-1:-111.67966" type="mandatory"></field>
+              		<field name="tbx_VCoordinate" value="wait-1:9264" type="mandatory"></field>
+               		<field name="tbx_HCoordinate" value="wait-1:6641" type="mandatory"></field>
+               		<field name="tbx_LATA" value="wait-1:666" type="mandatory"></field>
+               		<field name="tbx_NPa" value="wait-1:520" type="mandatory"></field>
+               		<field name="tbx_NXX" value="wait-1:466" type="mandatory"></field>
+			</container>
+			<container name="Location">
+               		<field name="ddl_searchType" value="wait-1:Inventory" type="mandatory"></field>
+               		<field name="ddl_invntryType" value="wait-1:Location" type="mandatory"></field>
+        	</container>
+        	<container name="TC54068 - Address Range">
+        			<field name="tbx_InvLocSrch_LowStreet" value="wait-1:700" type="mandatory"></field>
+               		<field name="tbx_InvLocSrch_HighStreet" value="wait-1:800" type="mandatory"></field>
+               		<field name="tbx_InvLocSrch_StreetName" value="wait-1:PARAMOUNT" type="mandatory"></field>
+					<field name="tbx_InvLocSrch_CityName" value="wait-1:OAKLAND" type="mandatory"></field>
+					<field name="ddl_InvLocSrch_StateName" value="wait-1:OR-Oregon" type="mandatory"></field>
+        	</container>
+			<container name="MEF OVC Service">
+			   	    <field name="ddl_createType" value="wait-2:Inventory" type="mandatory"></field>
+			        <field name="ddl_invntryType" value="wait-2:Service" type="mandatory"></field>
+                    <field name="ddl_ServiceType" value="wait-2:MEF OVC" type="mandatory"></field>
+        	</container>
+        	<container name="MEF EVC Service">
+			   	    <field name="ddl_createType" value="wait-2:Inventory" type="mandatory"></field>
+			        <field name="ddl_invntryType" value="wait-2:Service" type="mandatory"></field>
+                    <field name="ddl_ServiceType" value="wait-2:MEF EVC" type="mandatory"></field>
+        	</container>
+        	<container name="HOST Service">
+			   	    <field name="ddl_createType" value="wait-2:Inventory" type="mandatory"></field>
+			        <field name="ddl_invntryType" value="wait-2:Service" type="mandatory"></field>
+                    <field name="ddl_ServiceType" value="wait-2:Host Service" type="mandatory"></field>
+        	</container>
+          	<container name="TC24409">
+          		 <field name="ddl_locationclli" value="wait-1:TESTYYY" type="mandatory"></field>
+              	 <field name="ddl_relayID" value="wait-1:000021.12D" type="mandatory"></field>
+            </container>           	
+          	<container name="MST">
+               		<field name="ddl_searchType" value="wait-1:Inventory" type="mandatory"></field>
+               		<field name="ddl_invntryType" value="wait-1:Device" type="mandatory"></field>
+               		<field name="tbx_deviceName" value="wait-1:DFNCOH4333M-23456.33M" type="mandatory"></field>
+          		</container>
+          	<container name="FDP">
+               		<field name="ddl_searchType" value="wait-1:Inventory" type="mandatory"></field>
+               		<field name="ddl_invntryType" value="wait-1:Device" type="mandatory"></field>
+               		<field name="tbx_deviceName" value="wait-1:HSTNKS0112H-34567.12H" type="mandatory"></field>
+          		</container>
+          	<container name="Splitter">
+	               <field name="ddl_searchType" value="wait-1:Inventory" type="mandatory"></field>
+	               <field name="ddl_invntryType" value="wait-1:Device" type="mandatory"></field>
+	               <field name="tbx_deviceName" value="wait-1:LKWDCOHT44H-34567.44H" type="mandatory"></field>
+          		</container>          	   
+          	<container name="US31642-TC20884">
+		          <container name="Less than 1">
+		               <field name="tbx_ctagtxtfield1" value="wait-2:0" type="mandatory"></field>
+		               <field name="tbx_ctagtxtfield2" value="wait-2:213" type="mandatory"></field>               
+		          </container>
+		          <container name="Alphanumeric values">
+		               <field name="tbx_ctagtxtfield1" value="wait-2:015e24" type="mandatory"></field>
+		               <field name="tbx_ctagtxtfield2" value="wait-2:+1" type="mandatory"></field>               
+		          </container>
+		          <container name="Greater than 4095">
+		               <field name="tbx_ctagtxtfield1" value="wait-2:1" type="mandatory"></field>
+		               <field name="tbx_ctagtxtfield2" value="wait-2:4096" type="mandatory"></field>               
+		          </container>
+		           <container name="Single Range 1-4095">
+		               <field name="tbx_ctagtxtfield1" value="wait-2:1" type="mandatory"></field>
+		               <field name="tbx_ctagtxtfield2" value="wait-2:4095" type="mandatory"></field>               
+		          </container>
+		           <container name="Single Number Range">
+		               <field name="tbx_ctagtxtfield1" value="wait-2:222" type="mandatory"></field>
+		               <field name="tbx_ctagtxtfield2" value="wait-2:222" type="mandatory"></field>               
+		          </container>
+		          <container name="Multiple Range between 1-4095">
+		               <field name="tbx_ctagtxtfield1" value="wait-2:2" type="mandatory"></field>
+		               <field name="tbx_ctagtxtfield2" value="wait-2:123" type="mandatory"></field>
+		           </container>   
+		           <container name="Multiple Range between 1-4095 secound range">
+		               <field name="tbx_ctagtxtfield3" value="wait-2:1032" type="mandatory"></field>
+		               <field name="tbx_ctagtxtfield4" value="wait-2:1238" type="mandatory"></field>
+		            </container>
+		            <container name="Multiple Range between 1-4095 third range">
+		               <field name="tbx_ctagtxtfield5" value="wait-2:212" type="mandatory"></field>
+		               <field name="tbx_ctagtxtfield6" value="wait-2:1031" type="mandatory"></field> 		                            
+		          </container>
+		          <container name="Modify the Ctag Range">
+		               <field name="tbx_ctageditfield1" value="wait-2:2046" type="mandatory"></field>
+		               <field name="tbx_ctageditfield2" value="wait-2:4095" type="mandatory"></field>               
+		          </container>
+		          <container name="Overlapping the CTag range">
+		               <field name="tbx_ctagtxtfield1" value="wait-2:2" type="mandatory"></field>
+		               <field name="tbx_ctagtxtfield2" value="wait-2:4095" type="mandatory"></field>               
+		          </container>		          
+			 </container>
+			 <container name="TC44383-Location">
+               <field name="ddl_searchType" value="wait-1:Inventory" type="mandatory"></field>
+               <field name="ddl_invntryType" value="wait-1:Location" type="mandatory"></field>
+               <field name="tbx_searchstrtName" value="wait-1:WEST EAST CHORD" type="mandatory"></field>
+          	 </container>
+          	<container name="OLT-DSL OVC">
+               <field name="ddl_searchType" value="wait-1:Inventory" type="mandatory"></field>
+               <field name="ddl_invntryType" value="wait-1:Device" type="mandatory"></field>
+               <field name="tbx_deviceName" value="wait-1:LTTOCOEL-01CAB01A" type="mandatory"></field>
+          	 </container>
+         	<container name="OLT-MEF EVC">
+               	<field name="ddl_searchType" value="wait-1:Inventory" type="mandatory"></field>
+              	<field name="ddl_invntryType" value="wait-1:Device" type="mandatory"></field>
+               	<field name="tbx_deviceName" value="wait-1:DECAGILE-OLT-65052" type="mandatory"></field>
+         	 </container>         	 
+         	<container name="OLT-No Service">
+         		<field name="ddl_searchType" value="wait-1:Inventory" type="mandatory"></field>
+               	<field name="ddl_invntryType" value="wait-1:Device" type="mandatory"></field>
+               	<field name="tbx_deviceName" value="wait-1:TESTYYYYON1-ONT-1" type="mandatory"></field>
+         	 </container>
+        	<container name="Refreshdata">
+               <field name="ddl_searchType" value="wait-1:Inventory" type="mandatory"></field>
+               <field name="ddl_invntryType" value="wait-1:Device" type="mandatory"></field>
+               <field name="tbx_deviceName" value="wait-1:IRRTVYAP-OLT27174" type="mandatory"></field>
+         	 </container>
+        	<container name="DSL OVC Data">
+               <field name="ddl_searchType" value="wait-1:Inventory" type="mandatory"></field>
+               <field name="ddl_invntryType" value="wait-1:Service" type="mandatory"></field>
+               <field name="tbx_serviceName" value="wait-1:CNBLIAWA02W.2839_2.24" type="mandatory"></field>
+        	</container>
+       		<container name="CSOF Order ID">
+               	<field name="ddl_searchType" value="wait-1:Orders" type="mandatory"></field>
+              	<field name="ddl_productType" value="wait-1:GPON" type="mandatory"></field>
+               	<field name="tbx_orderId" value="wait-1:568014" type="mandatory"></field>
+         	</container>    
+         	<container name="Ensemble Order ID">
+               	<field name="ddl_searchType" value="wait-1:Orders" type="mandatory"></field>
+              	<field name="ddl_productType" value="wait-1:GPON" type="mandatory"></field>
+               	<field name="tbx_ensembleOrderNumber" value="wait-1:1337006432" type="mandatory"></field>
+         	</container>
+         	<container name="TN">
+               	<field name="ddl_searchType" value="wait-1:Orders" type="mandatory"></field>
+              	<field name="ddl_productType" value="wait-1:GPON" type="mandatory"></field>
+               	<field name="tbx_DTN" value="wait-1:1000007319" type="mandatory"></field>
+         	 </container>   
+         	 <container name="Customer Name">
+               	<field name="ddl_searchType" value="wait-1:Orders" type="mandatory"></field>
+              	<field name="ddl_productType" value="wait-1:GPON" type="mandatory"></field>
+               	<field name="tbx_customerName" value="wait-1:TEST, VIJAY" type="mandatory"></field>
+         	 </container>  
+         	 <container name="GPON Order">
+               	<field name="ddl_searchType" value="wait-1:Orders" type="mandatory"></field>
+              	<field name="ddl_productType" value="wait-1:GPON" type="mandatory"></field>
+              	<field name="lnk_orderadvanceSearch" value="wait-1:orderadvanceSearch" type="mandatory"></field>
+         	 </container>
+         	 <container name="Order_Validation">
+                  <field name="lbl_csoderid" value="77/L1XX/785391//ABCD" type="mandatory"></field>
+        	 </container>
+         	 <container name="DTN Data">
+               	<field name="tbx_dtnorder" value="wait-1:1000007319" type="mandatory"></field>              	
+         	 </container>         	        
+        </container>
+        <container name="OVCreateService_MEFEVC">
+         		<container name="MEF EVC">
+					<field name="tbx_name" value="wait-2:24/EVC1/012345//AUTO" type="mandatory"></field>
+               		<field name="tbx_alias1" value="wait-1:AUTO - SCRIPT" type="mandatory"></field>
+               		<field name="tbx_alias2" value="wait-1:SCRIPT - 1" type="mandatory"></field>
+					<field name="tbx_note" value="wait-1:AUTOMATION SCRIPT" type="mandatory"></field>
+               		<field name="ddl_evcnccode" value="wait-1:KDA-" type="mandatory"></field> 
+					<field name="ddl_cevlanidpreservation" value="wait-2:Y" type="mandatory"></field>
+               		<field name="ddl_cevlancospreservation" value="wait-1:Y" type="mandatory"></field>
+               		<field name="ddl_unicastframedelivery" value="wait-1:Delivery Conditionally" type="mandatory"></field>
+					<field name="ddl_multicastframedelivery" value="wait-1:Delivery Conditionally" type="mandatory"></field>
+					<field name="ddl_broadcastframedelivery" value="wait-2:Delivery Conditionally" type="mandatory"></field>
+               		<field name="ddl_servicetypeindicator" value="wait-1:CGE" type="mandatory"></field>
+               		<field name="tbx_groupnumber" value="wait-1:1" type="mandatory"></field>
+					<field name="ddl_usagetype" value="wait-2:HSI" type="mandatory"></field>
+					<field name="ddl_cosid" value="wait-1:COS" type="mandatory"></field>
+					<field name="tbx_asn" value="wait-1:2" type="mandatory"></field>
+					<field name="ddl_requestingaffiliate" value="wait-2:CENTURYTEL" type="mandatory"></field>
+					<field name="ddl_functionalstatus" value="wait-1:Not Specified" type="mandatory"></field>
+					<field name="ddl_mco" value="wait-2:KSCYMOBRIX" type="mandatory"></field>
+			</container>
+			<container name="HOST Service">
+					<field name="tbx_name" value="wait-2:13/HOST/012345//AUTO" type="mandatory"></field>
+               		<field name="tbx_alias1" value="wait-1:AUTO - SCRIPT" type="mandatory"></field>
+               		<field name="tbx_alias2" value="wait-1:SCRIPT - 1" type="mandatory"></field>
+					<field name="tbx_note" value="wait-5:AUTOMATION SCRIPT" type="mandatory"></field>
+					<field name="tbx_FID_NAME" value="wait-1:11/HOST/012345//AUTO" type="mandatory"></field>
+               		<field name="ddl_HOST_ACCEPTANCE_STATUS" value="wait-1:Yes" type="mandatory"></field>
+					<field name="ddl_CUSTOMER_ACCEPTANCE_STATUS" value="wait-2:Yes" type="mandatory"></field>
+					<field name="ddl_ACCEPTS_PREMIUM_SERVICES" value="wait-2:Yes" type="mandatory"></field>
+               		<field name="ddl_ACCEPTS_CVOIP" value="wait-1:Yes" type="mandatory"></field>
+               		<field name="cbx_HOSTIPVERSION" value="wait-1:0" type="mandatory"></field>
+					<field name="cbx_NWPROTOCOLTYPE" value="wait-2:1" type="mandatory"></field>
+               		<field name="cbx_SERVICECAPABILITY" value="wait-1:1" type="mandatory"></field>
+				</container>
+		<container name="MEF OVC">
+					<field name="tbx_name" value="wait-2:01/OVC1/012345//AUTO" type="mandatory"></field>
+               		<field name="tbx_alias1" value="wait-1:AUTO - SCRIPT" type="mandatory"></field>
+               		<field name="tbx_alias2" value="wait-1:SCRIPT - 1" type="mandatory"></field>
+					<field name="tbx_note" value="wait-1:AUTOMATION SCRIPT" type="mandatory"></field>					
+               		<field name="ddl_evcnccode" value="wait-1:KDAA" type="mandatory"></field>
+					<field name="ddl_colorforwarding" value="wait-1:Y" type="mandatory"></field> 
+					<field name="ddl_cevlanidpreservation" value="wait-2:Y" type="mandatory"></field>
+               		<field name="ddl_cevlancospreservation" value="wait-1:Y" type="mandatory"></field>
+					<field name="ddl_svlanidpreservation" value="wait-1:Y" type="mandatory"></field>
+					<field name="ddl_svlancospreservation" value="wait-1:Y" type="mandatory"></field>
+               		<field name="ddl_unicastframedelivery" value="wait-1:Delivery Conditionally" type="mandatory"></field>
+					<field name="ddl_multicastframedelivery" value="wait-1:Delivery Conditionally" type="mandatory"></field>
+					<field name="ddl_broadcastframedelivery" value="wait-2:Delivery Conditionally" type="mandatory"></field>
+					<field name="tbx_EvcOvcReference" value="wait-1:1" type="mandatory"></field>
+               		<field name="ddl_servicetypeindicator" value="wait-1:CGE" type="mandatory"></field>
+               		<field name="tbx_groupnumber" value="wait-1:1" type="mandatory"></field>
+					<field name="ddl_usagetype" value="wait-2:IP-ME" type="mandatory"></field>
+					<field name="tbx_asn" value="wait-1:2" type="mandatory"></field>
+					<field name="tbx_VPNid" value="wait-1:2" type="mandatory"></field>
+					<field name="ddl_requestingaffiliate" value="wait-2:CENTURYTEL" type="mandatory"></field>
+					<field name="ddl_mco" value="wait-2:MPLSMNONT" type="mandatory"></field>
+			</container>
+        </container>
+        <container name="OVLocationSearchPage">
+        	<container name="TC54068-Address Range">
+        		<field name="tbx_InvLocSrch_LowStreet" value="wait-1:700" type="mandatory"></field>
+        		<field name="tbx_InvLocSrch_HighStreet" value="wait-1:800" type="mandatory"></field>
+        		<field name="tbx_InvLocSrch_StreetName" value="wait-1:PARAMOUNT" type="mandatory"></field>
+        		<field name="tbx_InvLocSrch_CityName" value="wait-1:OAKLAND" type="mandatory"></field>
+        		<field name="ddl_InvLocSrch_StateName" value="wait-1:OR-Oregon" type="mandatory"></field>
+        	</container>
+        </container>
+        <container name="OVServiceDetailsPage">
+                  <field name="tbx_editDeviceName" value="77/L1XX/785391//ABCD" type="mandatory"></field>
+        </container>
+        <container name="OVModServiceDetailsPage">
+               <field name="tbx_editDeviceName" value="77/L1XX/785391//CTQF" type="mandatory"></field>
+        </container>
+        <container name="OVCreateDevicePage">				
+                <container name="US43123-TC24409">
+					<container name="Locationdata">
+	                	<field name="tbx_addNo" value="wait-1: " type="mandatory"></field>
+	                	<field name="tbx_streetName" value="wait-1: " type="mandatory"></field>
+	              	 	<field name="tbx_buildingclli" value="wait-1:TESTYYYY" type="mandatory"></field>
+          			</container>
+          			<container name="Devicedata">
+          		 		<field name="tbx_DeviceCLLI" value="wait-1:TESTYYYY" type="mandatory"></field>           	 	
+	              	 	<field name="tbx_relayID" value="DateTime:0.2345678" type="mandatory"></field>
+	              	 	<field name="ddl_Aerialrburied" value="wait-1:Aerial" type="mandatory"></field>
+            		</container>
+            		<container name="Topologydata">
+          		 		<field name="ddl_TopologyType" value="wait-1:PON Network" type="mandatory"></field>
+              	 		<field name="tbx_Topologyname" value="wait-1:TXNTW7223" type="mandatory"></field>              	 		 
+            		</container>               		
+				</container>
+				<container name="US40972-TC23914">
+					<container name="Locationdata">
+	                	<field name="tbx_addNo" value="wait-1:105" type="mandatory"></field>
+	                	<field name="tbx_streetName" value="wait-1:WEST EAST CHORD" type="mandatory"></field>
+	              	 	<field name="tbx_buildingclli" value="wait-1: " type="mandatory"></field>
+          			</container>
+          			<container name="Wireddata">
+	                	<field name="tbx_wiredaddNo" value="wait-1:105" type="mandatory"></field>
+	                	<field name="tbx_wiredstreetName" value="wait-1:WEST EAST CHORD" type="mandatory"></field>
+	              	 	<field name="tbx_wiredbuildingclli" value="wait-1: " type="mandatory"></field>
+          			</container>
+          			<container name="Devicedata">
+          		 		<field name="tbx_DeviceCLLI" value="wait-1:TESTYYYY" type="mandatory"></field>
+          		 		<field name="tbx_Devicedesignator" value="wait-1:03A" type="mandatory"></field>           	 	
+	              	 	<field name="ddl_IsDiversed" value="wait-1:No" type="mandatory"></field>
+	              	 	<field name="ddl_affiliate_owner" value="wait-1:LOCAL" type="mandatory"></field>	              	 	
+	              	 	<field name="ddl_Indooroutdoor" value="wait-1:Indoor" type="mandatory"></field>
+	              	 	<field name="tbx_rid" value="wait-1:254" type="mandatory"></field>
+	              	 	<field name="ddl_InstallationIndicator" value="wait-1:Self Install" type="mandatory"></field>
+	              	 	<field name="ddl_AerialOrBuried" value="wait-1:Buried" type="mandatory"></field>
+	              	 	<field name="ddl_FiberProvisioning" value="wait-1:Infrastructure Build" type="mandatory"></field>
+            		</container>
+            		<container name="Topologydata">
+          		 		<field name="ddl_TopologyType" value="wait-1:PON Network" type="mandatory"></field>
+              	 		<field name="tbx_Topologyname" value="wait-1:TXNTW7223" type="mandatory"></field>              	 		 
+            		</container>            		               		
+				</container>				      		
+				<container name="US51414-TC37684">
+					<container name="Locationdata">
+	                	<field name="tbx_addNo" value="wait-1: " type="mandatory"></field>
+	                	<field name="tbx_streetName" value="wait-1: " type="mandatory"></field>
+	              	 	<field name="tbx_buildingclli" value="wait-1:TESTYYYY" type="mandatory"></field>
+          			</container>
+          			<container name="Devicedata">
+          		 		<field name="tbx_DeviceCLLI" value="wait-1:TESTYYYY" type="mandatory"></field>
+          		 		<field name="tbx_Devicedesignator" value="wait-1:01A" type="mandatory"></field>           	 	
+	              	 	<field name="tbx_relayID" value="wait-1:0.0001245T07" type="mandatory"></field>
+	              	 	<field name="ddl_Aerialrburied" value="wait-1:Aerial" type="mandatory"></field>
+            		</container>
+            		<container name="Topologydata">
+          		 		<field name="ddl_TopologyType" value="wait-1:PON Network" type="mandatory"></field>
+              	 		<field name="tbx_Topologyname" value="wait-1:TXNTW7223" type="mandatory"></field>              	 		 
+            		</container> 
+            	</container>
+            	<container name="US51414-TC37479">
+					<container name="Locationdata">
+	                	<field name="tbx_addNo" value="wait-1: " type="mandatory"></field>
+	                	<field name="tbx_streetName" value="wait-1: " type="mandatory"></field>
+	              	 	<field name="tbx_buildingclli" value="wait-1:TESTYYYY" type="mandatory"></field>
+          			</container>
+          			<container name="Devicedata">
+          		 		<field name="tbx_DeviceCLLI" value="wait-1:TESTYYYY" type="mandatory"></field>
+          		 		<field name="tbx_Devicedesignator" value="wait-1:01A" type="mandatory"></field>           	 	
+	              	 	<field name="tbx_relayID" value="wait-1:0.0001245T07" type="mandatory"></field>
+	              	 	<field name="ddl_IsDiversed" value="wait-1:No" type="mandatory"></field>
+	              	 	<field name="ddl_Aerialrburied" value="wait-1:Aerial" type="mandatory"></field>
+	              	 	<field name="ddl_nosacer" value="wait-1:No" type="mandatory"></field>
+	              	 	<field name="ddl_gbpsind" value="wait-1:No" type="mandatory"></field>	              	 	
+            		</container>
+            		<container name="Topologydata">
+          		 		<field name="ddl_TopologyType" value="wait-1:PON Network" type="mandatory"></field>
+              	 		<field name="tbx_Topologyname" value="wait-1:TXNTW7223" type="mandatory"></field>              	 		 
+            		</container> 
+            	</container>          	
+            	<container name="US51414-TC37705">
+					<container name="Locationdata">
+	                	<field name="tbx_addNo" value="wait-1: " type="mandatory"></field>
+	                	<field name="tbx_streetName" value="wait-1: " type="mandatory"></field>
+	              	 	<field name="tbx_buildingclli" value="wait-1:TESTYYYY" type="mandatory"></field>
+          			</container>
+          			<container name="Devicedata">
+          		 		<field name="tbx_DeviceCLLI" value="wait-1:TESTYYYY" type="mandatory"></field>
+          		 		<field name="tbx_Devicedesignator" value="wait-1:01A" type="mandatory"></field>           	 	
+	              	 	<field name="tbx_relayID" value="wait-1:0.0001245T07" type="mandatory"></field>
+	              	 	<field name="ddl_affiliate_owner" value="wait-1:LOCAL" type="mandatory"></field>	              	 		              	 	
+            		</container>
+            		<container name="Subscriberdata">
+          		 		<field name="tbx_subscriber" value="wait-1:BRASSUB01" type="mandatory"></field>
+              	 		<field name="ddl_subtype" value="wait-1:INTERNAL" type="mandatory"></field>
+              	 		<field name="tbx_subid" value="wait-1:A0051" type="mandatory"></field>                 	 		 
+            		</container>             		
+            	</container> 			
+				<container name="TC39187-Subscriber">
+					<container name="Devicedata">
+	                	<field name="tbx_subcsname" value="wait-1:Willams" type="mandatory"></field>
+	                	<field name="ddl_subcaccidentifier" value="wait-1:Subscriber ID" type="mandatory"></field>
+	              	 	<field name="tbx_subscid" value="wait-1:45987" type="mandatory"></field>
+	              	 	<field name="ddl_subctype" value="wait-1:INTERNAL" type="mandatory"></field>
+	              	 	<field name="ddl_subcsubtype" value="wait-1:NATIONAL" type="mandatory"></field>
+	              	 </container> 
+          		</container>          	           	
+		</container>
+   	</container>					 
+</container>
